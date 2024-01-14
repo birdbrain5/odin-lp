@@ -1,3 +1,28 @@
 .flex-container {
     display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.header-links{
+    flex-grow:1;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    justify-content:center;
+    column-gap:3em;
+}
+
+.grid-container2{
+    display:grid;
+    grid-template-columns:auto;
+    justify-content:center;
+    column-gap:3em;
+}
+
+.grid-image{
+    height:8em;
 }

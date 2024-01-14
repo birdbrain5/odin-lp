@@ -6,64 +6,56 @@
     <title>Landing Page</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
-<body>
+<body style="display:flex; flex-direction:column; min-height:100vh;">
 
     <header>
         <div class="flex-container">
-            <div>Header Logo</div>
-            <div>header link one</div>
-            <div>header link two</div>
-            <div>header link three</div>
+            <h1 style="flex-grow: 6">Header Logo</h1>
+            <a href="url" class="header-links">header link one</a>
+            <a href="url" class="header-links">header link two</a>
+            <a href="url" class="header-links">header link three</a>
         </div>
     </header>
 
-    <div class="flex-container">
-        <div style="display:inline-block">
-            <h2>This website is awesome</h2>
-            <p>this website has some subtext that goes here under the main title</p>
-            <a href="url">Sign up</a>
+    <main style="flex:1">
+        <div class="grid-container">
+            <h2 style="grid-row-start: 1">This website is awesome</h2>
+            <p style="grid-row-start: 2">his website has some subtext that goes here under the main title</p>
+            <a href="url" style="grid-row-start: 3">Sign up</a>
+            <img src="./img/dog.jpg" alt="this is a placeholder for an image" style="height:8em; grid-row:1/3;"> 
         </div>
-        <div style="display:inline-block">
-            <img src="" alt="this is a placeholder for an image">
-        </div>    
-    </div>
 
-    <div>
-        <h3>Some Random Information</h3>
-        <div class="flex-container">
-            <div style="display:inline-block">
-                <img src="" alt="an image">
-                <p>some subtext</p>
-            </div>
-            <div style="display:inline-block">
-                <img src="" alt="an image">
-                <p>some subtext</p>
-            </div>
-            <div style="display:inline-block">
-                <img src="" alt="an image">
-                <p>some subtext</p>
-            </div>
-            <div style="display:inline-block">
-                <img src="" alt="an image">
-                <p>some subtext</p>
+        <div>
+            <h3 style="display:block; text-align:center;">Some Random Information</h3>
+            <div class="grid-container">
+                <img src="./img/dog.jpg" alt="an image" class="grid-image">
+                <img src="./img/dog.jpg" alt="an image" class="grid-image">
+                <img src="./img/dog.jpg" alt="an image" class="grid-image">
+                <img src="./img/dog.jpg" alt="an image" class="grid-image">
+                <p style="text-align:center">some subtext</p>
+                <p style="text-align:center">some subtext</p>
+                <p style="text-align:center">some subtext</p>
+                <p style="text-align:center">some subtext</p>
             </div>
         </div>
-    </div>
 
-    <div style="display:inline-block">
-        <p>inspiring paragraph inspiring paragraph inspiring paragraph inspiring paragraph inspiring paragraph inspiring paragraph </p>
-        <p>-Thor, god of thunder</p>
-    </div>
+        <div class="grid-container2">
+            <p>inspiring paragraph inspiring paragraph inspiring paragraph inspiring paragraph inspiring paragraph inspiring paragraph </p>
+            <p style="text-align:right">-Thor, god of thunder</p>
+        </div>
 
-    <div>
-        <h4>Call to action!</h4>
-        <p style="display:inline">sign up by clicking the button over there!</p>
-        <a href="url">Sign up</a>
-    </div>
+        <div>
+            <div class="grid-container2">
+                <h4 style="grid-row-start: 1">Call to action!</h4>
+                <p style="grid-row-start: 2">sign up by clicking the button over there!</p>
+                <a href="url" style="grid-row: 2/2">Sign up</a>
+            </div>
+        </div>
+    </main>
 
-    <footer>
+    <footer class="flex-container">
         <p>copyright me 2024</p>
     </footer>
-    
+
 </body>
 </html>
